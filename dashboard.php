@@ -28,11 +28,11 @@
                 </div>
 
                 <div class =" col-md-4">
-                 <a href="" class = "w-100 py-4 btn btn btn-outline-danger">Withdraw</a>
+                 <a href="withdrawal.php" class = "w-100 py-4 btn btn btn-outline-danger">Withdraw</a>
                 </div>
 
                 <div class =" col-md-4">
-                    <a href="" class = "w-100 py-4 btn btn btn-outline-info">History</a>
+                    <a href="" class = "w-100 py-4 btn btn btn-outline-info">Transactions</a>
                  </div>
             </div>
         </div>

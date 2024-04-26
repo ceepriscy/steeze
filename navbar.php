@@ -11,7 +11,7 @@
             <a href = "index.php"class = "btn btn-light me-2">Register</a>
             <a href = "login.php" class = "btn btn-light me-2">Login</a>
             <a href = "deposit.php"class = "btn btn-light me-2">Deposit</a>
-            <a class = "btn btn-light me-2">Withdraw</a>
+            <a href = "withdrawal.php"class = "btn btn-light me-2">Withdraw</a>
             <a class = "btn btn-light me-2">History</a>
         </div>
     </body>
