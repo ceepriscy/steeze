@@ -1,6 +1,5 @@
 <?php
     include 'navbar.php';
-    include 'connection.php';
 
     $user_id = $_SESSION ['id'];
     $sql =" SELECT * from customers where id = '$user_id'";
@@ -8,7 +7,7 @@
 
     $user = $get_user-> fetch_assoc();
 
-?>
+?>    
 
 <div class="row">
     <div class ="col-md-6 mx-auto">
@@ -19,22 +18,21 @@
                     <span> Account Balance: N <?php echo $user ['balance']?> </span> <br>
                     <span> Account Number: <?php echo $user ['number']?> </span>
                 </div>
-                 <a class="btn btn-outline-danger">Logout</a>
+                <a href="logout.php" class="btn btn-outline-danger">Logout</a>
             </div>
 
-            <div class ="row mt-5">
+             <div class ="row mt-5">
                 <div class =" col-md-4">
-                 <a href="deposit.php" class = "w-100 py-4 btn btn btn-outline-success">Deposit</a>
+                     <a href="deposit.php" class = "w-100 py-4 btn btn btn-outline-success">Deposit</a>
+                </div>
+
+                 <div class =" col-md-4">
+                    <a href="withdrawal.php" class = "w-100 py-4 btn btn btn-outline-danger">Withdraw</a>
                 </div>
 
                 <div class =" col-md-4">
-                 <a href="withdrawal.php" class = "w-100 py-4 btn btn btn-outline-danger">Withdraw</a>
+                    <a href="history.php" class = "w-100 py-4 btn btn btn-outline-info">History</a>
                 </div>
-
-                <div class =" col-md-4">
-                    <a href="" class = "w-100 py-4 btn btn btn-outline-info">Transactions</a>
-                 </div>
-            </div>
         </div>
     </div>
 </div>

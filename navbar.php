@@ -1,3 +1,7 @@
+<?php
+include 'connection.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,11 +12,22 @@
     </head>
     <body>
         <div class="d-flex justify-content-center my-5 bg-dark p-3">
+
+           <?php
+           if ($_SESSION['id'] == null) {
+            ?>
+
             <a href = "index.php"class = "btn btn-light me-2">Register</a>
             <a href = "login.php" class = "btn btn-light me-2">Login</a>
-            <a href = "deposit.php"class = "btn btn-light me-2">Deposit</a>
-            <a href = "withdrawal.php"class = "btn btn-light me-2">Withdraw</a>
-            <a class = "btn btn-light me-2">History</a>
+
+            <?php
+           } else {
+            ?> 
+        
+            <a href = "dashboard.php"class = "btn btn-light me-2">Dashboard</a>
+            <?php
+           }
+            ?>
         </div>
     </body>
 </html> 
